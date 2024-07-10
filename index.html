@@ -1,0 +1,329 @@
+<!-- LEVEL 0 -Install IDE & Extensions -->
+<!-- Visit https://developer.mozilla.org/ for Official resource documentation for HTML (hover on tags to go to official documentation)-->
+
+<!-- This is sytax for comment tag for other developers-->
+
+<!-- HTML CODE IS CASE INSENSITIVE e.g <p>=<P>, but always prefer lowercase - standard prcatice-->
+
+<!-- LEVEL 1 - BASIC SYNTAX-->
+
+<!DOCTYPE html> <!-- Defines html version-->
+<html lang="en"> <!-- parent of all html tags called as root tag-->
+<head> <!-- Parent of all meta data tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML In Code Notes</title> <!-- title of html document-->
+</head> 
+<body> <!-- parent of content tags-->
+    <!-- must use HTML tags are below-->
+    <!-- Using HTML Attributes-defines additional information e.g "<tag attribute="value">content</tag>"-->
+    <!--Id property-eachid should be unique in a html page-targets only specific element e.g "<div id="idname">content</div>" -->
+
+<!-- LEVEL 2-->
+    
+    <!--HEADINGS TAG (h1 to h6) heading is not for size it is for hierarchy, we can chage size using css-->
+    <h1>This is H1 Tag</h1>
+    <h2>This is H2 Tag</h2>
+    <h3>This is H3 Tag</h3>
+    <h4>This is H4 Tag</h4>
+    <h5>This is H5 Tag</h5>
+    <h6>This is H6 Tag</h6>
+
+    <!-- PARAGRAPH TAG (<p>) it gives automatic spacing to paragraphs. texts wrap to next lines-->
+    <p>This is P Tag "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam optio hic quaerat exercitationem iure ratione saepe, natus vero quibusdam minus? A facere nam quas esse odio blanditiis quaerat, exercitationem assumenda?"</p>
+    <p>This is P Tag "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam optio hic quaerat exercitationem iure ratione saepe, natus vero quibusdam minus? A facere nam quas esse odio blanditiis quaerat, exercitationem assumenda?"</p>
+
+    <!-- BR TAG (<br>)- For adding line breaks in thenparagraphs - it has no closing tag- can be written as </br>-->
+
+    <p>This P tag has no space despite adding multiple breaks "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rem velit magnam voluptates, 
+        
+    quo pariatur sapiente deleniti optio dolore aspernatur, perspiciatis molestias totam unde. Repudiandae hic repellat accusamus ullam quis!"</p>
+    <p>This p tag used br tag to break para in diffrent parts "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat nobis reiciendis, vero eaque excepturi quisquam <br>laborum incidunt? Expedita nesciunt tenetur, et, consectetur <br><br><br><!--use multiple br (3) for more line breaks-->maiores adipisci quia earum vel quidem quibusdam nobis.</p>
+
+    <!-- HR TAG (<hr>) - adding a horizontal line or dividing sections - can be written as </hr> -->
+    <p>demo para for hr tag "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quod dolorum facilis ipsa repellendus ea maxime est qui itaque modi, porro explicabo dolorem veniam corporis vero dolore nam! Dolore, accusantium?</p><hr>
+    <p>demo para seperated by hr tag "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quae necessitatibus dolorum dolorem fugit perspiciatis quos similique corporis velit hic dolor doloribus assumenda non, magnam consequatur consectetur neque accusamus modi</p>
+
+    <!-- IMAGE TAG (<img src="source-url(can be internet url of img)" alt="to add text for image for visionless people, or when image unable to load" height="300px" width="300px") - To add a image -self closing tag-->
+    <img src="images/start-blogging.png" alt="how to start a blog demo image" width="600" height="300">
+
+    <br><br> <!-- adding br tags to shift video to next line-->
+
+    <!-- VIDEO TAG (<video src="" width="1080" height="1920" autoplay cotrols loop) some attributes have no value - you can self close it with / or add </video> tag to close it-->
+    <video src="assets/videos/frustrated-shivam-video.mp4" width="300px" height="600px" autoplay controls loop muted></video> <!-- autoplay mute is necessory to autoplay your video in chrome browsers, without mute autoplay don't work now-->
+    
+    <br><br> <!-- adding br tags to shift to next line-->
+
+    <!-- ANCOR LINK TAG (<a href="">Link Text Here</a>) -->
+    <a href="https://bloggingcapital.com"> meri website ki link</a><br> <!-- Link in same tab-->
+    <a href="https://bloggingcapital.com" target="_blank"> meri website ki link</a> <!-- Link in new tab -->
+    <a href="https://bloggingcapital.com" target="_blank" rel="nofollow noopener sponsored"> meri website ki link</a><!-- link with seo tags marking affilite link, avoiding source, nofollow the link to to avoid SEO juice to follow to next page-->
+
+    <br><br><!-- adding br tags to shift to next line--> 
+
+    <!-- BOLD ITALIC UNDELINE AND STRIKETHROUGH - for text formatting-->
+    <b>bold text is here</b><hr>
+    <i>itlaic text is here</i><hr>
+    <u>underline text is here</u><hr>
+    <s>strikethrough text is here</s> <hr>  
+    
+    <!-- PREFORMATTED (<pre>)- tel google the txt is preformatted so maitain white space and oreserve text formatting - can be used to show code as well as it is, or application-->
+    <pre>
+        first line
+        more      line with spaces      line breaks
+
+    </pre><br>
+    <!-- lets write a application with pre tag to preserve the same format-->
+    <pre>
+        To 
+        The HR 
+        Most Useless Compnany Of World,
+        Lauda Compnany, Chutiya Building, 172345
+
+        Dear Bhen Ke Laude HR,
+        MAA CHUDA ME RESIGN KR RHA,
+
+                    AATHOO TERI COMPANY PE
+                    OR TERI THOOTH PE
+        CHAATA REH APNE BOSS KI
+
+        Tumhara Nikamma Employee
+        Shivam
+    </pre>
+    <br><br><hr> <!-- adding br and hr tags to shift to next line-->
+
+    <!-- BIG or SMALL TAG - not used mostly can be done with css to make text big or small-->
+    <big>This is big text</big><br>
+    <small>this is small text</small>
+    <br><br><hr> <!-- adding br and hr tags to shift to next line-->
+
+    <!-- SUPERSCRIPT AND SUBSCRIPT - (<sup> and <sub>) - to write maths formua and chemical reaction-->
+    <p>(a + b)2 = a2 + b2 + 2ab</p><hr>
+    <p>(a + b)<sup>2</sup>=a <sup>2</sup>+b <sup>2</sup>+2ab</p><br><hr>
+
+    <big>CH4 + O2 = CO2 + H2O</big><hr>
+    <big>CH<sub>4</sub>+O<sub>2</sub>= CO<sub>2</sub> + H<sub>2</sub>O</big>
+    <br><br><hr> <!-- adding br and hr tags to shift to next line-->
+
+    <!--Charcter Entity Reference - used to display special characters -start with & end with ;-->
+    <p>Use the following link <a href="https://tools.w3cub.com/html-entities" target="_blank">to find all html entities and their codes.</a></p>
+    <br><br><hr> <!-- adding br and hr tags to shift to next line--> 
+
+<!-- LEVEL 3 - Browser Tools-->
+    
+    <!-- Browser Tools - Only Client Side Changes -->
+    <!-- 1. View Page Source Of Any Website "view-source:https://www.example.com/" -->
+    <!-- 2. Use inspect element to view a particular element. Try to modify it. Used for debugging. -->
+    <!-- 3. Resposive Design - Your website is usable on different screen devices. Use Toogle Device Toolbar-->
+    <!-- 4. Live Code Editing, HTML & CSS: Change sub count on youtube, color, Chage Image. -->
+    <!-- 5. Code Validation - Validate Your Code for errors ("https://validator.w3.org")-->
+
+<!-- LEVEL 4 - HTML & Project Structure -->
+    
+        <!-- Semamtic Tags - Meaningful and describes content like header, footer, article, section, nav these are good for search engines. -->
+        <!-- Non Semantic tags have no specific meaning, like div, i, b -->
+
+        <!-- Body Tags - Header, Main and footer-->
+
+            <!-- Header Tags-->
+            <header><big>This is the header</big></header><hr>
+
+            <!-- Main Tag - Primary Tag for main content - it includes sections, div, -->
+            <main><p>This is main content "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus corporis dolor illo quis inventore aliquid necessitatibus consequatur alias, saepe cupiditate perspiciatis ratione sapiente. Autem rerum ex amet, repellendus sunt at.</p><br>
+            
+            <!-- Section Tag - to group related content in a section, used with h1 to h6 and can be bested with other sectino or article tags-->
+                <section>
+                    <h2>Technologies:HTML/CSS - Admissions</h2>
+                    <p>admissions will start soon</p>
+                </section>
+                <section>
+                    <h2>Technologies:Javascript - Portfolio</h2>
+                    <p>this is a portfolio section</p>
+                </section>
+
+            <!-- Ariticle Tag - For long content like text in a section-->
+                <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vitae ad suscipit ratione. Sapiente dolor reiciendis vel odit saepe, labore laboriosam explicabo delectus impedit id ducimus corporis repudiandae magni placeat.</article>
+
+                <section>
+                    <article> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea modi autem ipsam qui, quaerat odio quae est impedit iusto repellendus, assumenda dolorem iste eveniet. Eos, non omnis! Blanditiis, quibusdam!</article>
+                </section>
+            
+            <!-- ASIDE tag - for adding content that is not important like ads - not the main content -->
+                <aside>
+                    this is aside content and not related tomain content.
+                </aside>
+            </main><hr>
+
+            <!-- Footer Tag - for extra info and content, maily at bottom contect info, social links-->
+            <footer>
+                <a href="#">First Link</a><br>
+                <a href="#">Second Link</a><br>
+                <a href="#">Third Link</a><br>
+            </footer>
+        <!-- Folder Structure-->
+        <!-- Root diretory
+                html files
+                css files
+                js folder
+                assets folder
+                subdirectories-->
+
+        <!-- More misc Tags - nav for navigation -->
+         <header>
+            <nav>
+                <a href="#home">Homepage</a>
+                <a href="#content">Content</a>
+            </nav>
+        </header>
+        <main> <!-- Multiple main not allowed we added to make notes in one file-->
+            <p id="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quae eligendi repudiandae eum ab beatae quasi eaque, distinctio ipsum veritatis ea totam aperiam magni incidunt, deserunt vitae quisquam similique id.</p>
+        </main>
+
+        <!-- Block - sart a new line (div, p, h1, ul, li), Inline Elemets - stay inlinw with text (span, a, strong, em, img) lets use some example -->
+        <p id="para">this is a para</p> <p id="para2">this is a para</p> <!-- No Inline -->
+        <a href="#para">go to para</a> <a href="#para2">go to para</a> <!-- Inline -->
+
+        <!-- Div Tags - No sementic, just container for other html elements, avoid section but want to connect different items to make sure you write css for div not for each item. It is just grouping of tags -->
+        <div>
+            <p>this is a para</p>
+            <h3>This is h3</h3>
+            <big>this is big</big>
+        </div>
+
+        <!-- Span Tag - this is a highighted word in a paragraph-->
+        <p>this is a paragraph with <span id="spantext">spantext</span> include in it</p>
+
+
+<!-- LEVEL 5, list table, forms, iframe, maps -->
+
+        <!-- List Tag - ordered list (ol type="A,a,1,i,I"), unordered list (ul) -->
+        <ol>
+            <li>HTML</li>
+                <ol type="a">
+                    <li>Tags</li>
+                    <li>basics</li>
+                    <li>syntax</li>
+                </ol>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ol>
+
+        <!-- List tag - Unordered List (ul )-->
+        <ul>
+            <li>Div tag</li>
+            <li>IMG tag</li>
+            <li>SPAN tag</li>
+        </ul>
+
+        <!-- Table tag - tr -row, td-data, th -heading, caption tag-->
+        <table border="1">
+            <caption> My Skillset </caption>
+            <tr>
+                <th>Language</td>
+                <th>Rank</th>
+                <th>Exp Years</th>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>5/10</td>
+                <td>10 Years</td>
+            </tr>
+            <tr>
+                <td>c++</td>
+                <td>59/10</td>
+                <td>5 Years</td>
+            </tr>
+        </table>
+
+        <!-- Col Span - when we want to make a cell to take multiple column in table-->
+        <table border="1">
+            <caption> My Skillset </caption>
+            <tr>
+                <th colspan="2">tech i am good at</th>
+            </tr>
+            <tr>
+                <th>Language</td>
+                <th>Rank</th>
+                <th>Exp Years</th>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>5/10</td>
+                <td>10 Years</td>
+            </tr>
+            <tr>
+                <td>c++</td>
+                <td>59/10</td>
+                <td>5 Years</td>
+            </tr>
+        </table>
+
+        <!-- Form Tags (form) - Important to colect data, -->
+
+        <!-- Input tag - (input type="text, password," "placeholder="your text here" required=true, false ") self closing tag, action means where it submits data metjod=get or post ---- name -tell what tye of data is it like username-->
+         <form action="/submit.php" method="post">
+            Username: <input type="text" placeholder="your email username here" required="true" name="username"><br>
+            Password: <input type="password"><br>
+            <input type="submit">
+         </form>
+         <br><br><hr> <!-- adding br and hr tags to shift to next line-->
+
+
+         <!-- name is for naming a dat and identification of element when submitting, value property is the iitial value at start e.g. default value. Label is used to add a label to form element by tagging the id in the tag, -->
+        <!-- input type date, file, color, range, button, -->
+          <form action="/dummy.php" methiod="post">
+            <label for="username">Usename:</label>
+            <input type="text" name="username" id="username" value="default value"><br>
+            Date: <input type="date"><br>
+            File: <input type="file" name="" id=""><br>
+            Color: <input type="color" name="" id=""><br>
+            Rnage: <input type="range"><br>
+            poke me: <input type="button" value="poked" name="" id=""><br>
+            <input type="submit"><br>
+          </form>
+
+          <!-- Radio Buttons, if name=same then only 1 will be sele cted, if ame different multiple options can be selected-->
+          <form action="/post.php">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="noother">No Third Gender</label>
+            <input type="radio" name="gender" value="no third gender" id="noother">
+          </form>
+          <br><br><hr> <!-- adding br and hr tags to shift to next line-->
+
+          <!-- Checkbox attribute-->
+          <form action="">
+            <label for="c">C: </label>
+            <input type="checkbox" name="lang" id="c" alue="c">
+            <label for="c++">C++: </label>
+            <input type="checkbox" name="lang" id="c++" value="c++">
+            <label for="java">Java: </label>
+            <input type="checkbox" name="lang" id="java" value="java">
+          </form>
+
+          <br><br><hr> <!-- adding br and hr tags to shift to next line-->
+
+          <!-- Input type select - to select from contries, country code-->
+          <form action="post.php">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="other">Other</option>
+            </select>
+          </form>
+          <br><br><hr> <!-- adding br and hr tags to shift to next line-->
+
+          <!-- Input Type - Textarea-->
+          <textarea name="enter your text here" id="textarea1" cols="20" rows="10">Please write your text here</textarea>
+          <br><br><hr> <!-- adding br and hr tags to shift to next line-->
+
+          <!-- Iframe Tag - -->
+          <iframe src="https://en.wikipedia.org/wiki/HTML width="400" height="200"></iframe>
+
+          <!-- Lets Upload everything to github, git is version control system, -->
+
+</body>
+</html>
